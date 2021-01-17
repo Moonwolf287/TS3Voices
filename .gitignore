@@ -7,6 +7,11 @@ libwebsockets/
 *.ts3_plugin
 plugins/
 
+# Moonwolf unique ignores
+# Fonts / Icons that have no upload license
+# Alternatives will be embeded instead
+TS3Voices/html/fonts/CreativeRiotDesign/
+
 # IDE
 .idea
 
