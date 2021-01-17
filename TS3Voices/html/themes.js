@@ -1,4 +1,4 @@
-const possibleThemes = ['default', 'example'];
+const possibleThemes = ['default', 'example', 'moonwolf'];
 
 const themeParamName = 'theme'
 const params = new URLSearchParams(location.search);

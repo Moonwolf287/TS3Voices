@@ -1,0 +1,179 @@
+:root {
+    --streamer-font-weight: 900;
+    --streamer-color: #c30000;
+
+    --font-family: 'Orbitron', sans-serif;
+    --font-size: 22px;
+    --talking-font-weight: 600;
+    --silent-font-weight: 600;
+
+    --talking-color: #ffffff;
+    --silent-color: #ffffff;
+    --talking-icon-color: #c30000;
+    --silent-icon-color: #ffffff;
+
+    --item-background-color: rgba(0, 0, 0, 0.5);
+    --item-border-radius: 5px;
+    --item-margin: 5px 0;
+    --item-padding: 5px 0;
+
+    --container-width: auto;
+    --container-max-width: 400px;
+    --container-background-color: rgba(0, 0, 0, 0);
+    --container-border-radius: 5px;
+    --container-margin: 0;
+    --container-padding: 0;
+}
+
+/* orbitron-regular - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* orbitron-500 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* orbitron-600 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* orbitron-700 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* orbitron-800 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* orbitron-900 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+                 url('/fonts/Orbitron/orbitron-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+                 url('/fonts/Orbitron/orbitron-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Custom font of Icons used. They will not be available to download */
+@font-face {
+    font-family: 'CreativeRiotDesign';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+                 url('/fonts/CreativeRiotDesign/CreativeRiotDesign.woff2') format('woff2'),
+                 url('/fonts/CreativeRiotDesign/CreativeRiotDesign.woff') format('woff');
+}
+
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+            url("/fonts/FontAwesome/fa-solid-900.woff2") format("woff2"), 
+            url("/fonts/FontAwesome/fa-solid-900.woff") format("woff");
+}
+  
+
+#maindiv {
+    /* Align Bottom */
+    padding: var(--container-padding);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+
+    overflow: hidden;
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+
+    background-color: var(--container-background-color);
+    border-radius: var(--container-border-radius);
+    margin: var(--container-margin);
+    padding: var(--container-padding);
+}
+
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    font-family: var(--font-family);
+    font-weight: var(--silent-font-weight);
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    color: var(--silent-color);
+
+    background-color: var(--item-background-color);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5px, 
+            var(--item-background-color) 30px, var(--item-background-color) 100%);
+    border-radius: var(--item-border-radius);
+    padding: var(--item-padding);
+    margin: var(--item-margin);
+    /* To Order Clients below streamer */
+    order: 2;
+}
+
+.talking {
+    color: var(--talking-color);
+    font-weight: var(--talking-font-weight);
+}
+
+p.talking::before,
+p::before {
+    font-weight: 900;
+    display: inline-block;
+    vertical-align: bottom;
+    color: var(--silent-icon-color);
+    font-family: 'CreativeRiotDesign', 'Font Awesome 5 Free';
+    content: "\f201";
+    font-size: calc(var(--font-size) * var(--icon-font-size-adjust));
+    padding: 0 10px 0 5px;
+}
+p.talking::before {
+    color: var(--talking-icon-color);
+}
+
+.hidden {
+    display: none;
+}
+.hidden.always-visible,
+.always-visible {
+    display: block;
+}
+
+.always-visible {
+    color: var(--streamer-color);
+    font-weight: var(--streamer-font-weight);
+    /* To Order Streamer above clients */
+    order: 1;
+}
